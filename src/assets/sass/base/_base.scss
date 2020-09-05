@@ -1,0 +1,39 @@
+// ====================================
+// _base.scss
+// ベース
+// ====================================
+
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  color: $c-text;
+  background: $c-bg-lv1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+a {
+  color: $c-accent;
+  text-decoration: none;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+p, a, li, span {
+  font-size: 1em;
+}
+strong {
+  font-weight: bold;
+}

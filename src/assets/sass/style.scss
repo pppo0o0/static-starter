@@ -1,3 +1,14 @@
-body {
-  display: block;
-}
+
+// ====================================
+// style.scss
+// scssの読み込み
+// ====================================
+
+// base
+@import 'base/_setting.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+// layout
+@import "layout/header";
+@import "layout/footer";
