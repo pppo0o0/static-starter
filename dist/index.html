@@ -6,6 +6,9 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<!-- TODO：Favicon作る -->
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/favicon.ico">
 	<!-- css -->
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<!-- fontawesome -->
@@ -15,11 +18,45 @@
 	<!-- aos -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- ogp -->　
+	<!-- TODO：埋める -->
+	<meta property="og:url" content="ページの URL" />
+		<meta property="og:type" content="ページの種類" />
+		<meta property="og:title" content="映画『彼女来来』公式サイト" />
+		<meta property="og:description" content=" ページの説明文" />
+		<meta property="og:site_name" content="映画『彼女来来』公式サイト" />
+		<meta property="og:image" content=" サムネイル画像の URL" />
+		<meta name="twitter:card" content="カードの種類" />
+		<meta name="twitter:site" content="@ユーザー名" />
+		<!-- TODO:Facebook登録が必要 -->
+		<meta property=”fb:app_id” content=”App-ID(15文字の半角数字)”>
 </head>
 <body>
 
-	<header class="header">
-header
+<header>
+  <nav class="nav js-sp-navContent">
+    <div class="nav_inner">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="#page-top">TOP</a>
+        </li>
+        <li class="nav_item">
+          <a href="#story">STORY</a>
+        </li>
+        <li class="nav_item">
+          <a href="#caststaff">CAST＆STAFF</a>
+        </li>
+      </ul>
+      <ul class="nav_sns">
+        <li><a href="https://twitter.com/she_rairai" target="_blank" class="nav_sns_link"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="sp-navToggle js-sp-navToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 
@@ -30,6 +67,8 @@ header
 </footer>
 
 
+
+<script type="text/javascript" src="assets/js/index.min.js"></script>
 <script>
   AOS.init();
 </script>

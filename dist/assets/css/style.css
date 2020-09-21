@@ -95,8 +95,141 @@ strong {
   font-weight: bold;
 }
 
-.header {
-  background: #fff;
+@media (min-width: 480px) {
+  .nav {
+    position: absolute;
+    background: rgba(17, 17, 19, 0);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 auto;
+  }
+  .nav_list {
+    display: flex;
+    align-items: center;
+  }
+  .nav_item {
+    text-align: center;
+  }
+  .nav_item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .nav_item a:hover {
+    text-decoration: none;
+  }
+  .nav_sns_link {
+    display: block;
+    color: #333;
+    font-size: 2.4rem;
+  }
+  .nav_sns_link:hover {
+    text-decoration: none;
+  }
+  .nav.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111113;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+  }
+  .sp-nav-toggle {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+    transform: translateY(calc(-100% - 24px));
+    transition: all 0.6s;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .nav_inner {
+    padding: 15px 0;
+  }
+  .nav_list {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  .nav_item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav_item a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #111113;
+    font-weight: bold;
+  }
+  .nav_sns {
+    display: flex;
+    justify-content: center;
+  }
+  .nav_sns_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #111113;
+  }
+  .nav.is-active {
+    transform: translateY(0%);
+  }
+  .sp-navToggle {
+    position: fixed;
+    right: 7px;
+    top: 7px;
+    width: 53px;
+    height: 53px;
+    z-index: 8;
+    background: #111113;
+  }
+  .sp-navToggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 2px #333;
+    transition: .35s ease-in-out;
+    left: 12px;
+  }
+  .sp-navToggle span:nth-child(1) {
+    top: 16px;
+  }
+  .sp-navToggle span:nth-child(2) {
+    top: 25px;
+  }
+  .sp-navToggle span:nth-child(3) {
+    top: 34px;
+  }
+  .sp-navToggle.is-active span:nth-child(1) {
+    top: 25px;
+    left: 12px;
+    transform: rotate(-45deg);
+  }
+  .sp-navToggle.is-active span:nth-child(2), .sp-navToggle.is-active span:nth-child(3) {
+    top: 25px;
+    transform: rotate(45deg);
+  }
 }
 
 .footer {

@@ -22,5 +22,26 @@ $c-bg-lv2: #f7f8fb;
 $c-gray-01: #d6dfe6;
 $c-gray-02: #bec8d0;
 
-// mixin
+// size
 // ------------------------------------
+$size-pc-width: 990px;
+
+// box-shadow
+// ------------------------------------
+$shadow-header: 0 0 24px 0 rgba(0,0,0,0.15);
+
+// media
+// ------------------------------------
+$media-pc: 481px; // PC
+$media-sp: 480px;  // スマホ
+
+@mixin pc {
+  @media (min-width: ($media-sp)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($media-sp)) {
+    @content;
+  }
+}
