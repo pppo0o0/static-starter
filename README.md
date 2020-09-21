@@ -10,5 +10,10 @@ npm run watch
 
 ## 含まれているもの
 - fontawesome
-- jQuery
 - AOS
+- OGP雛形
+
+### jQuery
+- スムーズスクロール
+- SP/PCヘッダー出しわけ
+- PCヘッダースクロール固定
